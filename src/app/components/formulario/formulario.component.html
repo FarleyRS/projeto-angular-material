@@ -1,0 +1,79 @@
+<app-menu></app-menu>
+<div class="section">
+        <form id="login_form">
+            <!-- FORM HEADER -->
+            <div id="form_header" >
+                <h1><a id="logo" href=""><img class="image" src="../../../assets/imagem/botao-play.png" width="50px" height="50px" alt="" /></a></h1>
+                <img  id="mode_icon" [src]="op" (click)="trans()" width="20px">
+            </div>
+
+            <!-- SOCIAL MEDIA LINKS -->
+            <div id="social_media">
+                <!-- FACEBOOK -->
+                <a href="" routerLink="formulario" >
+                    <img src="../../../assets/imgs/facebook.png" alt="">
+                </a>
+
+                <!-- GOOGLE -->
+                <a href="#" routerLink="formulario">
+                    <img src="../../../assets/imgs/google.png" alt="Google logo">
+                </a>
+                
+                <!-- INSTAGRAM -->
+                <a href="#" routerLink="formulario">
+                    <img src="../../../assets/imgs/instagram.png" alt="">
+                </a>
+            </div>
+
+            <!-- INPUTS -->
+            <div id="inputs">
+                <!-- NAME -->
+                <div class="input-box">
+                    <label for="name">
+                        Usuario
+                        <div class="input-field">
+                            <img class="icones" src="https://img.icons8.com/material-sharp/512/user.png" width="20px">
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- EMAIL -->
+                <div class="input-box">
+                    <label for="email">
+                        E-mail
+                        <div class="input-field">
+                            <img class="icones" src="https://img.icons8.com/ios-glyphs/512/filled-message.png" width="20px">
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- PASSWORD -->
+                <div class="input-box">
+                    <label for="password">
+                        Senha
+                        <div class="input-field">
+                            <img class="icones" src="https://img.icons8.com/sf-ultralight-filled/512/key-security.png" width="20px">
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </label>
+                    
+                    <!-- FORGOT PASSWORD -->
+                    <div id="forgot_password">
+                        <a href="#" routerLink="formulario">
+                            Esqueceu sua senha por ser burro?
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOGIN BUTTON -->
+            <button type="submit" id="login_button">
+                Login
+            </button>
+        </form>
+</div>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+</style>

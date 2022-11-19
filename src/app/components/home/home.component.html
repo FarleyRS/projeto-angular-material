@@ -1,0 +1,81 @@
+<app-menu></app-menu>
+<div class="section">
+    <div *ngIf="images">
+        <div class="mySlides slideshow-container">
+            <img *ngFor="let image of images; let i=index" 
+                [src]="image" 
+                [ngClass]="{'image-active': selectedindex == i}">  
+      
+            <div style="text-align:center; display:inline-block;"  *ngFor="let dot of images; let i=index">
+                <span class="dot" 
+                    (click)="selectImage(i)"
+                    [ngClass]="{'active': selectedindex == i}">
+                </span>
+            </div> 
+        </div>
+    </div>
+
+      
+    <div class="cards" >
+        <div class="row"> 
+            <div class="column">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <mat-card-title>Homem Aranha</mat-card-title>
+                        <mat-card-subtitle><a href="">veja mais...</a></mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../../assets/imagem/homem aranha.jpg" alt="Imagem do Homem Aranha">
+                </mat-card>
+            </div>
+            
+            <div class="column">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                    <mat-card-title>Adão negro</mat-card-title>
+                    <mat-card-subtitle><a href="">veja mais...</a></mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../../assets/imagem/adão negro.png" alt="Imagem do Adão negro">
+                </mat-card>
+            </div> 
+             
+            <div class="column">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                    <mat-card-title>Aneis do poder</mat-card-title>
+                    <mat-card-subtitle><a href="">veja mais...</a></mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../../assets/imagem/aneis do poder.jfif" alt="Imagem de Aneis do poder">
+                </mat-card>
+            </div>
+            
+            <div class="column">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                    <mat-card-title>Blade runner</mat-card-title>
+                    <mat-card-subtitle><a href="">veja mais...</a></mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../../assets/imagem/blade runner.jpg" alt="Imagem de blade runner">
+                </mat-card>
+            </div>
+
+            <div class="column">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                    <mat-card-title>She hulk</mat-card-title>
+                    <mat-card-subtitle><a href="">veja mais...</a></mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../../assets/imagem/she hulk.webp" alt="Imagem do pacificador">
+                </mat-card>
+            </div>
+            <div class="column">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                    <mat-card-title>Pantera negra</mat-card-title>
+                    <mat-card-subtitle><a href="">veja mais...</a></mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="../../../assets/imagem/pantera negra.webp" alt="Imagem de pantera negra">
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
